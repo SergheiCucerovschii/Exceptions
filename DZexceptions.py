@@ -13,7 +13,7 @@ def printRes():
 while True:
     try:
         index = intInput()
-        data     = getData( index )
+        data = getData( index )
         printRes()
         break
     except ValueError:
