@@ -10,11 +10,13 @@ def getData( index ):
 def printRes():
    print(getData(index))
 
-try:
-    index = intInput()
-    data = getData( index )
-    printRes()
-except ValueError:
-    print("index cannot be something else than an integer")
-except IndexError:
-    print("an index value cannot be outside the list")
+while True:
+    try:
+        index = intInput()
+        data     = getData( index )
+        printRes()
+        break
+    except ValueError:
+        print("index cannot be something else than an integer")
+    except IndexError:
+        print("an index value cannot be outside the list")
